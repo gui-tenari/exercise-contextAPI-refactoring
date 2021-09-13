@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Cars from './Cars';
+import ContextProvider from './context/ContextProvider';
 
-function App() {
-  return (
-    <Cars />
-  );
+class App extends React.Component {
+  render() {
+    return (<ContextProvider />)
+  }
 }
 
 export default App;
